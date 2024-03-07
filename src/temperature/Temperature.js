@@ -16,11 +16,11 @@ export default class Temperature extends Component {
             <>
                 <div className='app-container'>
                     <div className='temperature-display'>
-                        <div className='temperature-display cold'></div>
+                        <div className={`temperature-display ${this.state.classTemp}`}></div>
                     </div>
                     <div className='button-container'>
-                        <button></button>
-                        <button></button>
+                        <button>+</button>
+                        <button>-</button>
                     </div>
                 </div>
             </>
