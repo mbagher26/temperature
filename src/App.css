@@ -9,4 +9,22 @@
   background-color: antiquewhite;
   margin: auto;
   border: 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.temperature-display{
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.cold{
+  background-color: blue;
+}
+
+.hot{
+  background-color: red;
 }
