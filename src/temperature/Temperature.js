@@ -6,7 +6,8 @@ export default class Temperature extends Component {
         super(props)
     
         this.state = {
-             
+             temp: 0,
+             classTemp : 'cold'
         }
     }
     
