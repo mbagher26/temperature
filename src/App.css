@@ -28,3 +28,20 @@
 .hot{
   background-color: red;
 }
+
+.button-container{
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: xx-large;
+  background-color: aqua;
+}
