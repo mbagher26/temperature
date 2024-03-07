@@ -14,8 +14,8 @@ export default class Temperature extends Component {
         return (
             <>
                 <div className='app-container'>
-                    <div className='temperature-display-container'>
-                        <div className='temperature-display-cold'></div>
+                    <div className='temperature-display'>
+                        <div className='temperature-display cold'></div>
                     </div>
                     <div className='button-container'>
                         <button></button>
