@@ -11,6 +11,20 @@ export default class Temperature extends Component {
         }
     }
     
+    addTemperature(){
+        if(this.temp >= 30){
+            return false
+        }
+        this.setState(pervstate =>{
+            return {temp: pervstate.temp + 1}
+        })
+
+        if(this.state.temp >= 15 ){
+            this.setState(
+                {classTemp : 'hot'}
+            )
+        }
+    }
     render() {
         return (
             <>
