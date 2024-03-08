@@ -15,7 +15,7 @@ export default class Temperature extends Component {
     }
     
     addTemperature(){
-        if(this.temp >= 30){
+        if(this.state.temp >= 30){
             return false
         }
         this.setState(pervstate =>{
@@ -30,7 +30,7 @@ export default class Temperature extends Component {
     }
 
     minusTemperature(){
-        if(this.temp <= 0){
+        if(this.state.temp <= 0){
             return false
         }
         this.setState(pervstate =>{
