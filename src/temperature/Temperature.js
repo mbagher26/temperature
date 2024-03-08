@@ -37,7 +37,7 @@ export default class Temperature extends Component {
             return {temp: pervstate.temp - 1}
         })
 
-        if(this.state.temp <= 10 ){
+        if(this.state.temp <= 15 ){
             this.setState(
                 {classTemp : 'cold'}
             )
