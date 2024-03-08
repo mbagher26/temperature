@@ -9,6 +9,9 @@ export default class Temperature extends Component {
              temp: 0,
              classTemp : 'cold'
         }
+
+        this.addTemperature = this.addTemperature.bind(this)
+        this.minusTemperature = this.minusTemperature.bind(this)
     }
     
     addTemperature(){
@@ -49,8 +52,8 @@ export default class Temperature extends Component {
                         <div className={`temperature-display ${this.state.classTemp}`}>{this.state.temp}</div>
                     </div>
                     <div className='button-container'>
-                        <button>+</button>
-                        <button>-</button>
+                        <button onClick={this.addTemperature}>+</button>
+                        <button onClick={this.minusTemperature}>-</button>
                     </div>
                 </div>
             </>
